@@ -83,3 +83,11 @@ bottom.children[2].children[1].textContent = siteContent['main-content']['vision
 // cta
 document.querySelector('.cta .cta-text h1').textContent = siteContent.cta.h1;
 document.querySelector('.cta .cta-text button').textContent = siteContent.cta.button;
+
+// nav links
+const navLinks = document.querySelectorAll('nav a');
+const navLinkTexts = Object.values(siteContent.nav);
+navLinks.forEach((link, index) => {
+  link.textContent = navLinkTexts[index];
+  link.classList.add('italic');
+});
