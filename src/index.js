@@ -39,4 +39,29 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
-console.log('project wired!')
+// images
+ const logoImg = document.querySelector('#logo-img');
+ logoImg.src = siteContent.images['logo-img'];
+
+ const ctaImg = document.querySelector('#cta-img');
+ ctaImg.src = siteContent.images['cta-img'];
+
+ const accentImg = document.querySelector('#middle-img');
+ accentImg.setAttribute('src', siteContent.images['accent-img']);
+
+ // text-contents
+
+  //FOOTER
+ const footerLink = document.querySelector('footer a');
+footerLink.textContent = siteContent.footer.copyright;
+footerLink.classList.add('bold');
+
+// Contact
+const contactList = document.querySelector('section.contact');
+contactList.children[0].textContent = siteContent.contact['contact-h4'];
+contactList.children[1].textContent = siteContent.contact['address'];
+contactList.children[2].textContent = siteContent.contact['phone'];
+contactList.children[2].textContent = siteContent.contact['email'];
+
+// top
+
