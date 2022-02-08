@@ -61,7 +61,7 @@ const contactList = document.querySelector('section.contact');
 contactList.children[0].textContent = siteContent.contact['contact-h4'];
 contactList.children[1].textContent = siteContent.contact['address'];
 contactList.children[2].textContent = siteContent.contact['phone'];
-contactList.children[2].textContent = siteContent.contact['email'];
+contactList.children[3].textContent = siteContent.contact['email'];
 
 // top
 
