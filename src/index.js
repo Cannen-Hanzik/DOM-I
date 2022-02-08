@@ -65,3 +65,17 @@ contactList.children[2].textContent = siteContent.contact['email'];
 
 // top
 
+const top = document.querySelector('.top-content');
+top.children[0].children[0].textContent = siteContent['main-content']['features-h4'];
+top.children[0].children[1].textContent = siteContent['main-content']['features-content'];
+top.children[1].children[0].textContent = siteContent['main-content']['about-h4'];
+top.children[1].children[1].textContent = siteContent['main-content']['about-content'];
+
+// bottom
+const bottom = document.querySelector('.bottom-content');
+bottom.children[0].children[0].textContent = siteContent['main-content']['services-h4'];
+bottom.children[0].children[1].textContent = siteContent['main-content']['services-content'];
+bottom.children[1].children[0].textContent = siteContent['main-content']['product-h4'];
+bottom.children[1].children[1].textContent = siteContent['main-content']['product-content'];
+bottom.children[2].children[0].textContent = siteContent['main-content']['vision-h4'];
+bottom.children[2].children[1].textContent = siteContent['main-content']['vision-content'];
